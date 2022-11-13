@@ -1,0 +1,75 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.page {
+
+    // .page__main
+
+    &__main {}
+
+    // .page__anime-pictures
+
+    &__anime-pictures {}
+}
+
+.page-background {
+    background: url('@img/page-background/01.png') right no-repeat;
+}
+
+//========================================================================================================================================================
+
+.anime-pictures {
+
+    // .anime-pictures__button-wrapper
+
+    &__button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+//========================================================================================================================================================
+
+.logo-page {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: rem(1) solid $briteRed;
+    // .logo-page__title
+
+    &__title {
+        text-transform: uppercase;
+        font-size: rem(40);
+        line-height: math.div(51, 40);
+    }
+
+    // .logo-page__img
+
+    &__img {}
+}
+
+//========================================================================================================================================================
+
+.swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(15);
+}
+
+.swiper-pagination-bullet {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: rem(12);
+    height: rem(12);
+    border-radius: 50%;
+    background-color: $mainColor;
+    outline: rem(0) solid #D70303;
+    transition: all 0.2s linear 0s;
+
+    &-active {
+        outline: rem(6) solid #D70303;
+    }
+}
