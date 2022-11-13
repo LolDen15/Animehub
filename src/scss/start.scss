@@ -25,7 +25,11 @@
 
     // .anime-pictures__slide
 
-    &__slide {}
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     // .anime-pictures__pagination
 
@@ -49,6 +53,7 @@
 
     &__img {
         img {
+            max-width: 100%;
             border-radius: rem(45);
         }
     }
