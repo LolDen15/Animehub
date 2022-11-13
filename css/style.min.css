@@ -176,6 +176,12 @@ body {
   font-size: 2.5rem;
   line-height: 1.275;
 }
+@media (max-width: 29.99875em) {
+  .logo-page__img {
+    display: none;
+  }
+}
+
 .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
@@ -426,6 +432,11 @@ body {
 .anime-pictures__slider:not(:last-child) {
   margin-bottom: 2.125rem;
 }
+.anime-pictures__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .anime-pictures__pagination:not(:last-child) {
   margin-bottom: 1.875rem;
 }
@@ -435,6 +446,7 @@ body {
 }
 
 .slide-anime-pictures__img img {
+  max-width: 100%;
   border-radius: 2.8125rem;
 }
 .swiper {

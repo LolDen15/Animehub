@@ -3485,6 +3485,24 @@
                 el: ".anime-pictures__pagination",
                 clickable: true
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: "auto",
+                    spaceBetween: 10
+                },
+                900: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1700: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                }
+            },
             on: {}
         });
     }
