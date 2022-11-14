@@ -130,6 +130,9 @@ body {
     font-size: calc(0.9375rem + 0.625 * (100vw - 20rem) / 94.375);
   }
 }
+.button_grey {
+  background-color: #3C3C3C;
+}
 @media (any-hover: hover) {
   .button:hover {
     box-shadow: 0px 0.9375rem 0.875rem rgba(0, 0, 0, 0.3);
@@ -137,6 +140,90 @@ body {
 }
 .button._fw {
   width: 100%;
+}
+
+.tabs-list__navigation {
+  display: flex;
+  gap: 0.625rem;
+  border-bottom: 0.125rem solid #373737;
+}
+.tabs-list__navigation:not(:last-child) {
+  margin-bottom: 2.125rem;
+}
+.tabs-list__title {
+  font-size: 0.9375rem;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: #373737;
+  padding: 0.625rem 0.9375rem;
+}
+.body-tabs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.25rem, 1fr));
+  gap: 2.5rem;
+}
+.item-tabs-list {
+  position: relative;
+}
+.item-tabs-list__img {
+  width: 100%;
+}
+.item-tabs-list__img img {
+  width: 100%;
+}
+.item-tabs-list__rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.9375rem;
+  line-height: 1.2666666667;
+  gap: 0.3125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #141414;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+  border-radius: 0px 0px 0.6875rem 0px;
+}
+.item-tabs-list__rating_green path {
+  fill: #00EE0A;
+}
+.item-tabs-list__like {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.item-tabs-list__content {
+  background-color: #141414;
+  opacity: 0.96;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0rem 0.375rem 1.6875rem 0.375rem;
+}
+
+.content-tabs-list__title {
+  text-align: center;
+}
+.content-tabs-list__title:not(:last-child) {
+  margin-bottom: 0.4375rem;
+}
+.content-tabs-list__episode {
+  display: flex;
+  font-size: 0.9375rem;
+  line-height: 1.2666666667;
+}
+.content-tabs-list__num {
+  flex: 1 1 auto;
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+.content-tabs-list__num span {
+  color: #FF0000;
+}
+.content-tabs-list__day {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: #FF0000;
 }
 
 [class*=-ibg] {
@@ -202,6 +289,21 @@ body {
 }
 .swiper-pagination-bullet-active {
   outline: 0.375rem solid #D70303;
+}
+
+.arrows {
+  display: flex;
+  gap: 0.9375rem;
+}
+.arrows__prev {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.arrows__next {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .sign-container {
@@ -339,6 +441,11 @@ body {
 @supports not (padding: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem )) {
   .header__inner {
     padding: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 94.375);
+  }
+}
+@media (min-width: 47.99875em) {
+  .header__inner_hub {
+    padding-bottom: 0rem;
   }
 }
 .menu-header__list {
@@ -749,6 +856,187 @@ body {
 }
 .sign-up__bottom {
   margin-bottom: 6.25rem;
+}
+
+.logo-hub {
+  margin-bottom: 2rem;
+}
+.logo-hub__inner {
+  width: 100%;
+  display: flex;
+  padding: 0rem 1.875rem;
+}
+@media (max-width: 47.99875em) {
+  .logo-hub__inner {
+    flex-direction: column;
+  }
+}
+@media (min-width: 47.99875em) {
+  .logo-hub__inner {
+    align-items: flex-end;
+  }
+}
+.logo-hub__block {
+  display: flex;
+  align-items: flex-end;
+}
+.logo-hub__block:not(:last-child) {
+  margin-right: 2.5rem;
+}
+@media (max-width: 61.99875em) {
+  .logo-hub__block {
+    display: none;
+  }
+}
+.logo-hub__form {
+  flex: 1 1 auto;
+  max-width: 62.5rem;
+}
+.logo-hub__form:not(:last-child) {
+  margin-right: 0.6875rem;
+}
+@media (min-width: 47.99875em) {
+  .logo-hub__form {
+    margin-bottom: 0.625rem;
+  }
+}
+.logo-hub__random {
+  display: flex;
+  align-items: center;
+}
+
+.form-logo-hub {
+  position: relative;
+}
+.form-logo-hub__search {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+}
+.form-logo-hub__search input {
+  width: 100%;
+  background-color: transparent;
+  padding: 0.25rem 0.375rem 0.375rem 3.125rem;
+  border-radius: 1.25rem;
+}
+.form-logo-hub__search input::placeholder {
+  line-height: 1.25;
+}
+.form-logo-hub__img {
+  position: absolute;
+  left: 0.6875rem;
+  top: 0.25rem;
+}
+
+.random-logo-hub__text {
+  line-height: 1.2666666667;
+}
+@supports (font-size: clamp( 1.5625rem , 1.4962748344rem  +  0.3311258278vw , 1.875rem )) {
+  .random-logo-hub__text {
+    font-size: clamp( 1.5625rem , 1.4962748344rem  +  0.3311258278vw , 1.875rem );
+  }
+}
+@supports not (font-size: clamp( 1.5625rem , 1.4962748344rem  +  0.3311258278vw , 1.875rem )) {
+  .random-logo-hub__text {
+    font-size: calc(1.5625rem + 0.3125 * (100vw - 20rem) / 94.375);
+  }
+}
+
+.anime-page__container {
+  display: flex;
+  gap: 1.875rem;
+}
+.anime-page__list {
+  max-width: 78.125%;
+}
+.list-anime__top:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.top-list__slider {
+  position: relative;
+}
+.top-list__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(0px, -100%);
+}
+.top-list__arrows {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-0.625rem, -20%);
+}
+.top-list__arrows_next path {
+  fill: black;
+}
+.slide-top-list {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+}
+.slide-top-list__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 0px 344px 6px rgba(0, 0, 0, 0.46);
+  filter: blur(5px);
+}
+.slide-top-list__bg img {
+  max-width: 100%;
+}
+.slide-top-list__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-top-list__img img {
+  max-height: 16.875rem;
+}
+.slide-top-list__content {
+  margin-top: 1.25rem;
+  max-width: 62.5rem;
+}
+.slide-top-list__title {
+  font-size: 1.875rem;
+  line-height: 1.2666666667;
+}
+.slide-top-list__title:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.slide-top-list__text {
+  line-height: 1.25;
+}
+.slide-top-list__text:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+.slide-top-list__status {
+  line-height: 1.25;
+}
+.slide-top-list__status span {
+  color: #FF0000;
+}
+
+.user-anime__profile {
+  background-color: #242424;
+  padding: 0.9375rem 4.375rem;
+}
+
+.profile-user-anime__img:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.profile-user-anime__name {
+  text-align: center;
+  line-height: 1.25;
+}
+.profile-user-anime__name:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.profile-user-anime__profilelink {
+  font-size: 1.125rem;
+  line-height: 1.2777777778;
+  width: 13.375rem;
 }
 .swiper {
   overflow: hidden;
